@@ -89,6 +89,16 @@ body {
     padding-bottom: 3rem;
 }
 
+#billboard > span{
+    width: 100%;
+    font-size: 64px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 4rem;
+}
+
 #content hr{
     margin-bottom: 3rem;
     width: 32rem;
