@@ -1,15 +1,17 @@
 body {
     margin: 0;
     background-color: #313131;
+    color: white;
+    font-family: "IBM Plex Mono", monospace
 }
 
-#header, #backdrop, #content {
+#header, #backdrop, #content, #footer {
     width: 100vw;
     height: 100vh;
 }
 
 #content{
-    height: calc(100vh - 24rem);
+    height: calc(100vh - 28rem);
 }
 
 #backdrop{
@@ -41,14 +43,12 @@ body {
 
 #backdrop > div:last-child > span{
     overflow-wrap: break-word;
-    color: white;
-    font-family: "IBM Plex Mono", monospace;
 }
 
 #header{
     display: flex;
     height: 20rem;
-    box-shadow: 2px 2px 20px black;
+    box-shadow: 2px 0 20px #0008;
 }
 
 #header svg{
@@ -58,8 +58,6 @@ body {
 
 #header > div{
     display: flex;
-    font-family: "IBM Plex Mono", monospace;
-    color: white;
     text-transform: uppercase;
     margin: auto auto;
     z-index: 4;
@@ -83,8 +81,6 @@ body {
 
 #content > div{
     margin: 4rem 2rem;
-    color: white;
-    font-family: "IBM Plex Mono", monospace;
 }
 
 #content #description{
@@ -129,6 +125,22 @@ body {
     text-transform: uppercase;
 }
 
-#content a{
+#content a, #footer a{
     color: gainsboro;
+}
+
+#footer {
+    box-shadow: -2px 0 20px #0002;
+    height: 4rem;
+    background-color: #444;
+    display: flex;
+}
+
+#footer p {
+    font-size: 16px;
+    margin: auto 2rem;
+}
+
+#footer p:first-child{
+    margin-right: auto;
 }
