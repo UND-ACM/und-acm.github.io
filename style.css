@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    background-color: #313131;
+}
+
+#header, #backdrop, #content {
+    width: 100vw;
+    height: 100vh;
+}
+
+#content{
+    height: calc(100vh - 24rem);
+}
+
+#backdrop{
+    overflow: hidden;
+    height: 20rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#backdrop > div:first-child{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 20rem;
+    background: linear-gradient(-45deg, #0f4d21db, #057d29);
+}
+
+#backdrop > div:last-child{
+    z-index: 2;
+    position: absolute;
+    height: calc(20rem + 32px);
+    width: calc(100vw + 32px);
+    top: -16px;
+    left: -16px;
+    background-color: #008026;
+}
+
+#backdrop > div:last-child > span{
+    overflow-wrap: break-word;
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+#header{
+    display: flex;
+    height: 20rem;
+    box-shadow: 2px 2px 20px black;
+}
+
+#header svg{
+    width: 16rem;
+    height: 16rem;
+}
+
+#header > div{
+    display: flex;
+    font-family: "IBM Plex Mono", monospace;
+    color: white;
+    text-transform: uppercase;
+    margin: auto auto;
+    z-index: 4;
+}
+
+#header > div > div:last-child{
+    margin-left: 2rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#header > div > div:last-child > h1{
+    font-size: 48px;
+    margin: 0;
+}
+
+#header > div > div:last-child > span{
+    font-size: 24px;
+    margin: 0;
+}
+
+#content > div{
+    margin: 4rem 2rem;
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+#content #description{
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+#content hr{
+    margin-bottom: 3rem;
+    width: 32rem;
+    color: #0000;
+    border-bottom: 2px solid #fff4;
+}
+
+#content table {
+    font-size: 20px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#content table td{
+    padding: 0.5rem;
+}
+
+#content table tr{
+    background-color: #0003;
+}
+
+#content table tr:nth-child(odd){
+    background-color: #0005;
+}
+
+#content table tr td:first-child{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#content table tr td:last-child{
+    padding-left: 2rem;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+#content a{
+    color: gainsboro;
+}
